@@ -237,7 +237,12 @@ a {
 }
 
 .highlight-block {
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(16,12,10,0.9), rgba(20,16,14,0.9));
+  border: 1px solid rgba(201,161,74,0.06);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28);
 }
 
 .pricing-list {
