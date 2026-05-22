@@ -35,9 +35,7 @@ function App() {
             <p className="hero-copy">
               Chairs • Tables • Canopies • Catering Equipment
             </p>
-            <a className="button-primary" href={whatsappLink} target="_blank" rel="noreferrer">
-              Get Quote on WhatsApp
-            </a>
+            {/* CTA moved to Contact section per request */}
           </div>
           <div className="hero-visual">
             <div className="hero-card">
@@ -137,8 +135,8 @@ function App() {
           </div>
           <div className="contact-panel">
             <div>
-              <a className="button-secondary" href={whatsappLink} target="_blank" rel="noreferrer">
-                Message on WhatsApp
+              <a className="button-primary" href={whatsappLink} target="_blank" rel="noreferrer">
+                Get Quote on WhatsApp
               </a>
               <p className="contact-copy">
                 Send us your event date and we will prepare a custom package within minutes.
