@@ -1,7 +1,7 @@
 import './App.css'
 import logo from './assets/logo.jpeg'
 
-const whatsappPhone = '947xxxxxxxxx'
+const whatsappPhone = '94777290610'
 const whatsappMessage = encodeURIComponent(
   'Hello, I need an event rental quote for my wedding / party / corporate event.'
 )
@@ -145,8 +145,9 @@ function App() {
               </p>
             </div>
             <div className="contact-details">
-              <p><strong>Phone:</strong> +94 7XXXXXXXX</p>
-              <p><strong>Location:</strong> Colombo, Sri Lanka</p>
+              <p><strong>Phone:</strong> +94 777 290 610</p>
+              <p><strong>WhatsApp:</strong> <a href={whatsappLink} target="_blank" rel="noreferrer">wa.me/+94777290610</a></p>
+              <p><strong>Location:</strong> <a href="https://share.google/QagW8DOWTOVyc7Ako" target="_blank" rel="noreferrer">Google Map</a></p>
             </div>
           </div>
         </section>
@@ -161,14 +162,14 @@ function App() {
           <div className="footer-columns">
             <div>
               <p className="footer-heading">Contact</p>
-              <p>Phone: +94 7XXXXXXXX</p>
+              <p>Phone: +94 777 290 610</p>
               <p>Email: hello@sparkevents.lk</p>
-              <p>WhatsApp: +94 7XXXXXXXX</p>
+              <p>WhatsApp: <a href={whatsappLink} target="_blank" rel="noreferrer">+94 777 290 610</a></p>
             </div>
             <div>
               <p className="footer-heading">Follow</p>
-              <p><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></p>
-              <p><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a></p>
+              <p><a href="https://www.facebook.com/nivanfestivalgoods/" target="_blank" rel="noreferrer">Facebook — Nivan Festival Goods</a></p>
+              <p><a href="https://www.tiktok.com/@nivanfestivalgoods?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7623344093343417872" target="_blank" rel="noreferrer">TikTok — @nivanfestivalgoods</a></p>
             </div>
           </div>
         </footer>
