@@ -1,118 +1,121 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-const whatsappNumber = '94771234567' // replace with your WhatsApp number in international format without +
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello!%20I%20need%20a%20quote%20for%20an%20event%20rental.`
-
-const categories = [
-  {
-    title: 'Seating',
-    items: ['Plastic Chairs', 'Tiffany Chairs', 'Banquet Chairs'],
-  },
-  {
-    title: 'Tables',
-    items: ['Round tables', 'Plastic tables', 'Dining setups'],
-  },
-  {
-    title: 'Canopies & Structures',
-    items: ['Tents', 'Metal roofs', 'VIP huts'],
-  },
-  {
-    title: 'Catering Equipment',
-    items: ['Buffet sets', 'Gas equipment', 'Utensils'],
-  },
-]
-
-const pricingHighlights = [
-  { label: 'Starting from', value: 'Rs 25 per chair' },
-  { label: 'Canopy packages', value: 'from Rs 2,250' },
-  { label: 'Full event setups', value: 'available for weddings, parties & corporate events' },
-]
-
-const galleryPhotos = [
-  { src: heroImg, alt: 'Event setup photo 1' },
-  { src: heroImg, alt: 'Event setup photo 2' },
-  { src: heroImg, alt: 'Event setup photo 3' },
-  { src: heroImg, alt: 'Event setup photo 4' },
-]
-
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="page">
-      <header className="hero-section">
-        <div className="hero-copy">
-          <span className="eyebrow">Event Rental Services in Sri Lanka</span>
-          <h1>Everything you need for weddings, parties & corporate events</h1>
+    <>
+      <section id="center">
+        <div className="hero">
+          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={reactLogo} className="framework" alt="React logo" />
+          <img src={viteLogo} className="vite" alt="Vite logo" />
+        </div>
+        <div>
+          <h1>Get started</h1>
           <p>
-            Chairs, tables, canopies and catering equipment ready to make your event
-            look professional and reliable. Send your event date and get a custom quote
-            on WhatsApp.
+            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
-          <a className="cta-button" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            Get Quote on WhatsApp
-          </a>
         </div>
-        <div className="hero-image-wrap">
-          <img className="hero-image" src={heroImg} alt="Event rental setup" />
-        </div>
-      </header>
+        <button
+          type="button"
+          className="counter"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          Count is {count}
+        </button>
+      </section>
 
-      <section className="section section-categories">
-        <h2>Categories</h2>
-        <div className="grid cards-grid">
-          {categories.map((category) => (
-            <article key={category.title} className="card">
-              <h3>{category.title}</h3>
-              <ul>
-                {category.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
+      <div className="ticks"></div>
+
+      <section id="next-steps">
+        <div id="docs">
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#documentation-icon"></use>
+          </svg>
+          <h2>Documentation</h2>
+          <p>Your questions, answered</p>
+          <ul>
+            <li>
+              <a href="https://vite.dev/" target="_blank">
+                <img className="logo" src={viteLogo} alt="" />
+                Explore Vite
+              </a>
+            </li>
+            <li>
+              <a href="https://react.dev/" target="_blank">
+                <img className="button-icon" src={reactLogo} alt="" />
+                Learn more
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="social">
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#social-icon"></use>
+          </svg>
+          <h2>Connect with us</h2>
+          <p>Join the Vite community</p>
+          <ul>
+            <li>
+              <a href="https://github.com/vitejs/vite" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#github-icon"></use>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://chat.vite.dev/" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#discord-icon"></use>
+                </svg>
+                Discord
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/vite_js" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#x-icon"></use>
+                </svg>
+                X.com
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#bluesky-icon"></use>
+                </svg>
+                Bluesky
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section className="section section-pricing">
-        <h2>Simple pricing highlight</h2>
-        <div className="grid pricing-grid">
-          {pricingHighlights.map((item) => (
-            <div key={item.value} className="pricing-card">
-              <p className="pricing-label">{item.label}</p>
-              <p className="pricing-value">{item.value}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section section-gallery">
-        <h2>Gallery</h2>
-        <p className="section-note">
-          Real event photos build trust more than text. Replace these with your own setup images.
-        </p>
-        <div className="gallery-grid">
-          {galleryPhotos.map((photo, index) => (
-            <div key={index} className="gallery-item">
-              <img src={photo.src} alt={photo.alt} />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section section-contact">
-        <div className="contact-card">
-          <h2>Contact</h2>
-          <p>Send us your event date and we will prepare a custom package within minutes.</p>
-          <a className="cta-button" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            Send WhatsApp Message
-          </a>
-          <div className="contact-details">
-            <p><strong>Phone:</strong> +94 77 123 4567</p>
-            <p><strong>Location:</strong> Colombo, Sri Lanka</p>
-          </div>
-        </div>
-      </section>
-    </div>
+      <div className="ticks"></div>
+      <section id="spacer"></section>
+    </>
   )
 }
 
