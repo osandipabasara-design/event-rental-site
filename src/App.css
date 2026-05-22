@@ -74,6 +74,15 @@ a {
   box-shadow: 0 16px 28px rgba(236, 72, 153, 0.24);
 }
 
+.brand-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
 .brand-name {
   margin: 0;
   font-size: 1.15rem;

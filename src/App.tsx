@@ -1,4 +1,5 @@
 import './App.css'
+import logo from './assets/logo.png'
 
 const whatsappPhone = '947xxxxxxxxx'
 const whatsappMessage = encodeURIComponent(
@@ -12,7 +13,7 @@ function App() {
       <header className="page-header">
         <div className="header-top">
           <div className="brand-row">
-            <div className="logo-mark">S</div>
+            <img src={logo} alt="Spark Events logo" className="brand-logo" />
             <div>
               <p className="brand-name">Spark Events</p>
               <p className="brand-tag">Event Organising • Event Rental</p>
