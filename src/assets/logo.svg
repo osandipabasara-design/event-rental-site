@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="none"/>
+  <g transform="translate(150,100)">
+    <path d="M0-50 L8 -10 L48 -8 L14 12 L24 50 L0 26 L-24 50 L-14 12 L-48 -8 L-8 -10 Z" fill="url(#g)" opacity="0.95"/>
+  </g>
+  <text x="150" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#fff">Spark Events</text>
+</svg>
