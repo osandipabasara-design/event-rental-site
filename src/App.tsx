@@ -79,19 +79,38 @@ function App() {
             <p className="section-label">Simple pricing highlight</p>
             <h2>Starting prices for quick trust</h2>
           </div>
-          <div className="pricing-list">
-            <div className="pricing-item">
-              <span>Starting from</span>
-              <strong>Rs 25 per chair</strong>
-            </div>
-            <div className="pricing-item">
-              <span>Canopy packages</span>
-              <strong>from Rs 2250</strong>
-            </div>
-            <div className="pricing-item">
-              <span>Full event setups</span>
-              <strong>available</strong>
-            </div>
+          <div className="pricing-list pricing-cards">
+            <article className="pricing-card">
+              <div className="pricing-card-body">
+                <h3>Seating</h3>
+                <p className="price"><span className="currency">Rs</span> <span className="amount">25</span><span className="per"> / chair</span></p>
+                <p className="muted">Plastic, Tiffany & Banquet chairs</p>
+              </div>
+            </article>
+
+            <article className="pricing-card">
+              <div className="pricing-card-body">
+                <h3>Tables</h3>
+                <p className="price"><span className="currency">Rs</span> <span className="amount">400</span><span className="per"> / table</span></p>
+                <p className="muted">Round, dining & plastic tables</p>
+              </div>
+            </article>
+
+            <article className="pricing-card">
+              <div className="pricing-card-body">
+                <h3>Canopies & Huts</h3>
+                <p className="price"><span className="currency">Rs</span> <span className="amount">2250</span><span className="per"> / package</span></p>
+                <p className="muted">Tents, metal roofs, VIP huts</p>
+              </div>
+            </article>
+
+            <article className="pricing-card">
+              <div className="pricing-card-body">
+                <h3>Buffet Sets & Equipment</h3>
+                <p className="price"><span className="currency">Rs</span> <span className="amount">3000</span><span className="per"> / set</span></p>
+                <p className="muted">Buffet sets, gas equipment, utensils</p>
+              </div>
+            </article>
           </div>
         </section>
 
