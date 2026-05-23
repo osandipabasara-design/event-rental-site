@@ -1,5 +1,11 @@
 import './App.css'
 import logo from './assets/logo.jpeg'
+import image1 from './assets/image1.jpeg'
+import image2 from './assets/image2.jpeg'
+import image3 from './assets/image3.jpeg'
+import image4 from './assets/image4.jpeg'
+import image5 from './assets/image5.jpeg'
+import image6 from './assets/image6.jpeg'
 import { FaFacebook, FaTiktok, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
 
 const whatsappPhone = '94777290610'
@@ -118,11 +124,22 @@ function App() {
             <p className="section-label">Gallery</p>
             <h2>Real event photos from Sri Lanka</h2>
           </div>
-          <div className="grid gallery-grid">
-            <div className="gallery-card">Photo 1 — replace with your event image</div>
-            <div className="gallery-card">Photo 2 — replace with your event image</div>
-            <div className="gallery-card">Photo 3 — replace with your event image</div>
-            <div className="gallery-card">Photo 4 — replace with your event image</div>
+          <div className="marquee-container">
+            <div className="marquee-content">
+              <img src={image1} className="gallery-img" alt="Event setup 1" />
+              <img src={image2} className="gallery-img" alt="Event setup 2" />
+              <img src={image3} className="gallery-img" alt="Event setup 3" />
+              <img src={image4} className="gallery-img" alt="Event setup 4" />
+              <img src={image5} className="gallery-img" alt="Event setup 5" />
+              <img src={image6} className="gallery-img" alt="Event setup 6" />
+              
+              <img src={image1} className="gallery-img" alt="Event setup 1" />
+              <img src={image2} className="gallery-img" alt="Event setup 2" />
+              <img src={image3} className="gallery-img" alt="Event setup 3" />
+              <img src={image4} className="gallery-img" alt="Event setup 4" />
+              <img src={image5} className="gallery-img" alt="Event setup 5" />
+              <img src={image6} className="gallery-img" alt="Event setup 6" />
+            </div>
           </div>
           <p className="gallery-note">
             Use real phone photos of setups, tents, chairs, tables and buffet setups to build trust.
