@@ -501,19 +501,19 @@ a {
   display: flex;
   gap: 24px;
   min-width: max-content;
-  animation: scrollRight 35s linear infinite;
+  animation: scrollLeft 35s linear infinite;
 }
 
 .marquee-content:hover {
   animation-play-state: paused;
 }
 
-@keyframes scrollRight {
+@keyframes scrollLeft {
   from {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
 }
 
