@@ -231,6 +231,23 @@ a {
   z-index: 1;
 }
 
+.hero-large-logo {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid var(--accent-gold-500);
+  box-shadow: 0 0 40px rgba(201,161,74,0.3);
+  margin-top: 32px;
+  animation: floatLogo 6s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 .button-primary,
 .button-secondary {
   display: inline-flex;

@@ -45,10 +45,7 @@ function App() {
             {/* CTA moved to Contact section per request */}
           </div>
           <div className="hero-visual">
-            <div className="hero-card">
-              <span>Professional rental support</span>
-              <p>Quick WhatsApp conversion and reliable event setup delivery.</p>
-            </div>
+            <img src={logo} alt="Spark Events Large Logo" className="hero-large-logo" />
           </div>
         </div>
       </header>
