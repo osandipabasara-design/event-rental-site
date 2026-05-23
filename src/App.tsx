@@ -40,7 +40,7 @@ function App() {
             <p className="eyebrow">Event Rental Services in Sri Lanka</p>
             <h1>Everything you need for weddings, parties & corporate events</h1>
             <p className="hero-copy">
-              Chairs • Tables • Canopies • Catering Equipment
+              Elevate your special occasions with our premium event rentals. We provide top-tier seating, elegant tables, robust canopies, and professional catering equipment to ensure your weddings, parties, and corporate events are truly unforgettable.
             </p>
             {/* CTA moved to Contact section per request */}
           </div>
