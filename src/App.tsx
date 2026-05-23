@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import './App.css'
 import logo from './assets/logo.jpeg'
 import image1 from './assets/image1.jpeg'
@@ -6,7 +7,7 @@ import image3 from './assets/image3.jpeg'
 import image4 from './assets/image4.jpeg'
 import image5 from './assets/image5.jpeg'
 import image6 from './assets/image6.jpeg'
-import { FaFacebook, FaTiktok, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaFacebook, FaTiktok, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaSun, FaMoon } from 'react-icons/fa'
 
 const whatsappPhone = '94777290610'
 const whatsappMessage = encodeURIComponent(
@@ -15,6 +16,18 @@ const whatsappMessage = encodeURIComponent(
 const whatsappLink = `https://wa.me/${whatsappPhone}?text=${whatsappMessage}`
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true)
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.remove('light-theme')
+    } else {
+      document.documentElement.classList.add('light-theme')
+    }
+  }, [isDarkMode])
+
+  const toggleTheme = () => setIsDarkMode(!isDarkMode)
+
   return (
     <div className="page-shell">
       <header className="page-header">
@@ -32,6 +45,9 @@ function App() {
             <a href="#pricing">Pricing</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
+            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+              {isDarkMode ? <FaSun /> : <FaMoon />}
+            </button>
           </nav>
         </div>
 
