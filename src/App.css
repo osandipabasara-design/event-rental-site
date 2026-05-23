@@ -778,21 +778,21 @@ a {
 
 :root.light-theme .eyebrow,
 :root.light-theme .section-label {
-  color: var(--accent-gold-500);
-  font-weight: 800;
+  color: var(--text-100);
 }
 
+
 :root.light-theme .hero-section h1 {
-  background: linear-gradient(to right, #000, #a17a2c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-100);
+  -webkit-text-fill-color: var(--text-100);
+  background: none;
 }
 
 :root.light-theme .footer-title,
 :root.light-theme .brand-name {
-  background: linear-gradient(to right, #000, #a17a2c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-100);
+  -webkit-text-fill-color: var(--text-100);
+  background: none;
 }
 
 :root.light-theme .hero-copy,
