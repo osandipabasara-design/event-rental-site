@@ -26,9 +26,9 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
+    "https": "//github.com/osandipabasara-design/event-rental-site.git",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12",
-    "https": "//github.com/osandipabasara-design/event-rental-site.git"
+    "vite": "^8.0.12"
   }
 }
