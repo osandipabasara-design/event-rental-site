@@ -778,7 +778,8 @@ a {
 
 :root.light-theme .eyebrow,
 :root.light-theme .section-label {
-  color: var(--text-100);
+  color: var(--accent-gold-500);
+  font-weight: 800;
 }
 
 
