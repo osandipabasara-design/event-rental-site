@@ -773,7 +773,7 @@ a {
 :root.light-theme .price .amount,
 :root.light-theme .price .currency,
 :root.light-theme .hero-card span {
-  color: #111827;
+  color: var(--accent-gold-500);
 }
 
 :root.light-theme .eyebrow,
@@ -784,9 +784,9 @@ a {
 
 
 :root.light-theme .hero-section h1 {
-  color: var(--text-100);
-  -webkit-text-fill-color: var(--text-100);
-  background: none;
+  background: linear-gradient(to right, #000, #a17a2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 :root.light-theme .footer-title,
