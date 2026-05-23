@@ -608,20 +608,36 @@ a {
   font-size: 1.1rem;
 }
 
-.footer-columns p {
-  margin: 10px 0;
-  color: #cbd5e1;
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.footer-columns a {
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: #cbd5e1;
   transition: all 0.2s ease;
+  font-size: 1.05rem;
 }
 
-.footer-columns a:hover,
-.footer-columns a:focus-visible {
+.footer-links a svg {
+  color: var(--accent-gold-300);
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
   color: var(--accent-gold-500);
   padding-left: 5px;
+}
+
+.footer-links a:hover svg {
+  transform: scale(1.15);
+  color: var(--accent-gold-500);
 }
 
 @media (max-width: 900px) {
