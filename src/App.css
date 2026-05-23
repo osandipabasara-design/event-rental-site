@@ -769,8 +769,17 @@ a {
 :root.light-theme h2,
 :root.light-theme .card h3,
 :root.light-theme .pricing-card h3,
-:root.light-theme .footer-heading {
+:root.light-theme .footer-heading,
+:root.light-theme .price .amount,
+:root.light-theme .price .currency,
+:root.light-theme .hero-card span {
   color: #111827;
+}
+
+:root.light-theme .eyebrow,
+:root.light-theme .section-label {
+  color: var(--accent-gold-500);
+  font-weight: 800;
 }
 
 :root.light-theme .hero-section h1 {
@@ -792,7 +801,12 @@ a {
 :root.light-theme .contact-copy,
 :root.light-theme .footer-copy,
 :root.light-theme .footer-links a,
-:root.light-theme .nav-links a {
+:root.light-theme .nav-links a,
+:root.light-theme .brand-tag,
+:root.light-theme .gallery-note,
+:root.light-theme .muted,
+:root.light-theme .hero-card p,
+:root.light-theme .price .per {
   color: #374151;
 }
 
